@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lanysec.rbac.user.dao.web.AppointDao">
+   <resultMap type="com.lanysec.rbac.user.model.web.Appoint" id="BaseResultMap">
+        <id property="id" column="id" jdbcType="INTEGER"/>
+        <result property="appointId" column="appointId" jdbcType="VARCHAR"/>
+        <result property="appointContent" column="appointContent" jdbcType="VARCHAR"/>
+        <result property="appointTime" column="appointTime" jdbcType="VARCHAR"/>
+        <result property="appointStatus" column="appointStatus" jdbcType="VARCHAR"/>
+        <result property="acceptAccount" column="acceptAccount" jdbcType="VARCHAR"/>
+        <result property="postAccount" column="postAccount" jdbcType="VARCHAR"/>
+        <result property="clientAssment" column="clientAssment" jdbcType="VARCHAR"/>
+        <result property="businessAssment" column="businessAssment" jdbcType="VARCHAR"/>
+       
+    </resultMap>
+    <select id="getAppointList" resultMap="BaseResultMap">
+        SELECT 
+            *
+        FROM 
+            sys_appoint
+        LIMIT
+          #{startNum},#{page}
+    </select>
+        <select id="getClientAppointList" resultMap="BaseResultMap">
+        SELECT 
+            *
+        FROM 
+            sys_appoint
+        WHERE
+           acceptAccount=#{acceptAccount} 
+        LIMIT
+          #{startNum},#{page}
+    </select>
+    
+  <select id="getBussinessAppointList" resultMap="BaseResultMap">
+        SELECT 
+            *
+        FROM 
+            sys_appoint
+        WHERE
+           postAccount=#{postAccount} or  acceptAccount=#{postAccount}
+        LIMIT
+          #{startNum},#{page}
+    </select>
+      <select id="getAppointListByStatus" resultMap="BaseResultMap">
+        SELECT 
+            *
+        FROM 
+            sys_appoint
+        WHERE
+           appointStatus=#{appointStatus}
+        LIMIT
+          #{startNum},#{page}
+    </select>
+    
+    <select id="getSignalAppointById" resultMap="BaseResultMap">
+     SELECT 
+            *
+        FROM 
+            sys_appoint
+    WHERE
+    appointId=#{appointId}  
+    
+    </select>
+      <select id="getCount" resultType="INTEGER">
+        SELECT 
+              COUNT(*)
+        FROM
+             sys_appoint
+      </select>
+     
+      <insert id="addAppoint">
+          INSERT INTO 
+              sys_appoint  
+                (appointId,appointContent,appointTime,appointStatus,acceptAccount,postAccount,clientAssment,businessAssment)
+            VALUES
+                (#{appoint.appointId},#{appoint.appointContent},#{appoint.appointTime},#{appoint.appointStatus}
+                ,#{appoint.acceptAccount},#{appoint.postAccount},#{appoint.clientAssment},#{appoint.businessAssment})
+        </insert>
+        <update id="updateAppoint">
+           UPDATE 
+                sys_appoint  
+            SET
+               appointContent=#{appoint.appointContent},
+               acceptAccount=#{appoint.acceptAccount},
+               postAccount=#{appoint.postAccount}
+           WHERE
+               appointId=#{appoint.appointId}
+        </update>
+        
+        <update id="updateBussinessAppointAssment">
+           UPDATE 
+                sys_appoint  
+            SET
+               businessAssment=#{appoint.businessAssment}
+           WHERE
+               appointId=#{appoint.appointId}
+        </update>
+          <update id="updateClientAppointAssment">
+           UPDATE 
+                sys_appoint  
+            SET
+               clientAssment=#{appoint.clientAssment}
+           WHERE
+               appointId=#{appoint.appointId}
+        </update>
+        
+        <delete id="deleteAppointByIsbn">
+            DELETE FROM
+                 sys_appoint 
+              WHERE
+                appointId=#{appointId} 
+        </delete>
+</mapper>

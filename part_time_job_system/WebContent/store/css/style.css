@@ -1,0 +1,1238 @@
+ /** Website template by freewebsitetemplates.com **/
+ body { 
+            margin:0;
+			padding:0;
+			background: url("../images/bg-body.gif");
+			background-repeat:repeat-x;
+	}
+	
+ #page{
+      
+ 
+ }	
+ 
+ #header{
+    width:960px;
+	height:72px;
+	position:relative;
+	margin:0 auto;
+ }
+		
+  #header a#logo{
+     position:relative;
+	 z-index:100;
+  }		
+  
+  #header a#logo img{
+    border:0; 
+  }
+  
+  /**-------------- Navigation style ---------------**/
+  #header ul.navigation{
+      list-style-type:none;
+	  margin:-82px 0 0 300px;
+	  padding:0;
+	  overflow:hidden;
+	  
+  }
+  
+  #header ul.navigation li{
+      float:left;
+	  height:35px;
+	  width:107px;
+  }
+  
+  #header ul.navigation li.active{
+      
+	  background:url("../images/menu.gif");
+	  background-repeat:no-repeat;
+	  background-position: 0 -160px;
+  }
+  
+  #header ul.navigation li a{
+    text-decoration:none;
+	color:#2c1d00;
+	font-family:"Myriad Pro";
+	font-size:14px;
+	font-weight:bold;
+	display:inline-block; 
+	line-height:35px;
+	background:url("../images/menu-separator.gif");
+	background-repeat:no-repeat;
+	background-position:right; 
+	height:35px;
+	padding:0 20px 0 20px;
+	text-align:center;
+	width:67px;
+  }
+  
+  #header ul.navigation li a:hover{
+	color:#ffffff;
+	
+  }
+  
+  
+  /**------------- Start of body style ----------------**/
+  
+  #body div.banner{
+     background:url("../images/dog.jpg");
+	 background-position:center;
+	 background-repeat:no-repeat;
+	 height:606px;
+  }
+  
+  
+  #body div#content{
+    width:960px;
+	margin:0 auto;
+	overflow:hidden;
+	background-image:none;
+	height:auto;
+	overflow:hidden;
+  }
+  
+  #body div#content .content{
+    float:left; 
+	width:640px;
+	margin-right:20px;
+	background-image:none;
+	height:auto;
+	overflow:hidden;
+  }
+  
+  #body #content .content h2{
+	
+	font-family: "Myriad Pro";
+    margin: 80px 0 0 30px;
+  }
+  
+  
+  #body #content .content ul{
+     margin:0;
+	 padding:0;
+	 list-style-type:none;
+	 
+  }
+  
+  #body #content .content ul li{
+     width:300px; 
+	 padding:0 10px;
+	 margin:0 0 20px 0;
+	 float:left;
+	 line-height:25px;
+	 height:auto;
+	 
+  } 
+  
+  #body #content .content ul li span{
+     display:block;
+  }    
+  #body #content .content ul li span a{
+    color: #7F7154;
+    font-family: "Myriad Pro";
+    font-size: 14px;
+	text-decoration:none;
+  }
+  #body #content .content ul li span a:hover{
+    color: #000000; 
+  }
+  
+  
+  #body #content .content ul li span a.more{
+     text-decoration:none;
+	 color:#FFAD00; 
+  }
+  
+  
+  #body #content .content ul li span a.more:hover{
+     text-decoration:none;
+	 color:#ff6600;
+  }
+  
+  #body #content .content ul li a{
+     text-decoration:none;
+  }
+  
+  #body #content .content ul li a:hover{
+    color:#F8F3E9;
+  }
+  
+  #body #content .content ul li a.more{
+     text-decoration:none;
+	 color:#FFAD00; 
+  }
+  
+  
+  #body #content .content ul li a.more:hover{
+     text-decoration:none;
+	 color:#ff6600;
+  }
+   
+  #body #content .content ul li h2{
+    font-family:"Myriad Pro";
+    font-size:20px;
+	margin:0;
+	
+	}
+   
+  #body #content .content ul li  p{
+    font-family:"Myriad Pro";
+	font-size:14px;
+	text-align:justify; 
+	color:#7f7154;
+	margin:0;
+  }
+  
+  #body #content .content ul li  p a{
+    color:#FF9E01;
+  }
+  #body #content .content ul li  p a:hover{
+    color:#7f7154;
+  }
+  
+  #body #content .content ul li img{
+    border:0;
+	float:left;
+	margin-right:10px;
+  }
+    
+/**--------- Start of Blog Page Style **/	
+    #body #content .content ul.articles{
+		list-tyle-type:none;
+		margin:80px 25px 0 0;
+		padding:0;
+		background-image:none;
+		width:640px;
+	}
+	
+	#body #content .content ul.articles li{
+	  padding:0;
+	  clear:both;
+	  width:640px;
+	
+	}
+	
+	
+	
+	#body #content .content ul.articles li {
+	  background:url("../images/bg-blog-bottom-curve.gif");
+	  background-position: left bottom;
+	  background-repeat:no-repeat;
+	}
+	
+	#body #content .content ul.articles li div{
+	 height:98px;
+	 line-height:78px;
+	 background:url("../images/bg-blog-heading.gif");
+	 background-position: top center;
+	 background-repeat:no-repeat;
+	}
+	#body #content .content ul.articles li p{
+	 background:url("../images/bg-blog-content.gif");
+	 background-position: left;
+	 background-repeat:repeat-y;
+	 margin:-10px 0 8px 0;
+	 padding: 0 10px 0 48px;
+	 font-family:"Myriad Pro";
+	 font-size:14px;
+	}
+	
+	#body #content .content ul.articles li p a{
+	   color:#FF9D13;
+	}
+	#body #content .content ul.articles li p a:hover{
+	   color:#7F7154;
+	}
+	
+	
+	#body #content .content ul.articles li div span{
+	   float:left;
+	   width:110px;
+	   text-align:center;
+	   color:#ffffff;
+	   font-family:"Myriad Pro";
+	   font-size:18px;
+	}
+	#body #content .content ul.articles li div h2{
+	   float:left;
+	   width:450px;
+	   color:#FF9D13;
+	   font-weight:normal;
+	   font-size:28px;
+	}
+	
+	
+	
+	
+	#body #content .content div a.old{
+	  background:url("../images/top-border-short.gif");
+	  background-position: top center;
+	  background-repeat:no-repeat;
+	  display:inline-block;  
+	  width:118px;
+	  height:35px;
+	  text-align:center;
+	  line-height:35px;
+	  position:relative;
+	  left:400px;
+	    margin-bottom:50px;
+		color:#7F7154;
+		text-decoration:none;
+		font-family:"Myriad pro";
+		margin-top:25px;
+	}
+	
+	#body #content .content div a.new{
+	  background:url("../images/top-border-short.gif");
+	  background-position: top center;
+	  background-repeat:no-repeat;
+	  display:inline-block;  
+	  width:118px;
+	  height:35px;
+	  line-height:35px;
+	  position:relative;
+	  left:40px;
+	  text-align:center;
+	  margin-bottom:50px;
+	  margin-top:25px;
+	  color:#7F7154;
+	  text-decoration:none;
+	  font-family:"Myriad pro";
+	}
+	#body #content .content div a.old:hover{
+	  color:#000000;
+	  
+	}
+	#body #content .content div a.new:hover{
+	  color:#000000;
+	}
+	
+	#body #content .content ul.articles li   a.heart{
+	  background:url("../images/icons.gif");
+	  
+	  background-position: 5px -374px;
+	  
+	  background-repeat:no-repeat;
+	  display:inline-block;  
+	  width:20px;
+	  height:20px;
+	  margin-top:25px;
+	  
+	  /*
+	  *margin-top:0px; 
+	  */
+	}
+	
+	#body #content .content ul.articles li  a.facebook{
+	 background:url("../images/icons.gif");
+	 background-position: 0 -124px;
+	 
+	  background-repeat:no-repeat;
+	  
+	  display:inline-block;  
+	  width:20px;
+	  height:20px;
+	   /*
+	   *margin-top:0px;
+	   */
+	   
+	}
+	
+	#body #content .content ul.articles li  a.twitter{
+	  background:url("../images/icons.gif");
+	  background-position: 0 -534px;
+	  background-repeat:no-repeat;
+	  display:inline-block;  
+	  width:20px;
+	  height:20px;
+	  /*
+	   *margin-top:0px;
+	   */
+	}
+	
+	
+	
+	
+
+/**--------- End of Blog Page Style **/	
+	
+  /**----------- Start of Pet Mart Page Style ----------**/
+  
+  
+  #body #content  .search{
+     background:url("../images/bg-search-form2.gif");
+	 background-position:center;
+	 background-repeat:no-repeat;
+	 width:540px;
+	 height:75px;
+	 margin:0 auto;
+	 margin-top:80px;
+	 margin-bottom:80px;
+  }
+  
+  #body #content  .search input{
+    background:url("../images/input-search2.gif");
+	 background-position:center;
+	 background-repeat:no-repeat;
+	 width:420px; 
+	 padding: 8px 5px;
+	 border:0;
+	 margin:5px 3px 5px 10px;
+	 font-size:14px;
+	 font-family:"Myriad Pro";
+	 color:#7f7154;
+	 
+  }
+  
+  #body #content .search button{
+	 background-position: 0 -270px;
+	 background-repeat:no-repeat;
+	 width:77px; 
+	 height:30px;
+	 border:0;
+	 margin:5px 5px 5px 0;
+	 cursor:pointer;
+  }
+  
+  #body #content  .search label{
+	 font-size:14px;
+	 font-family:"Myriad Pro";
+	 color:#ffffff;
+	} 
+   #body #content .search label input{
+     margin: 0 10px 0 10px;
+	 width:10px;
+	 background:transparent;
+   }
+   
+  
+  /**----------- End of Pet Mart Page Style ----------**/
+  
+  
+  /**------------ Start of About page style  -------------**/
+  
+  #body #content .content .about{
+    width:640px; 
+	height:auto;
+	overflow:hidden;
+  }
+  
+  #body #content .content .about h2{
+    margin:80px 0 0 30px;
+	
+    font-family: "Myriad Pro";
+  }
+  
+  #body #content .content .about ul{
+     margin:0;
+	 padding:0;
+	 list-style-type:none;
+  }  
+  
+   #body #content .content .about ul li{
+		clear:both;
+		width:600px;
+		padding:20px 10px 0 30px; 
+  }  
+  #body #content .content .about ul li h2{
+      margin:0;
+	  padding:0;
+	  font-weight:normal;
+  }
+  #body #content .content .about ul li h2 a{
+    color:#ff9506;
+	font-size:24	px;
+	font-family: "Myriad Pro";
+	text-decoration:none;
+  } 
+  
+  #body #content .content .about ul li h2 a:hover{
+   color: #7F7154;
+  }
+  
+  #body #content .content .about ul li p{
+    color: #7F7154;
+    font-family: "Myriad Pro";
+    font-size: 14px;
+    text-align: justify;
+  }	
+  
+  #body #content .content .about ul li p span{
+     display:block;
+  }
+  
+  #body #content .content .about ul li p a{
+     color:#000000;
+	 text-decoration:underline;
+  }
+  
+  #body #content .content .about ul li p a:hover{
+    color:#7F7154;
+  }
+  
+  /**------------ End of About page style  -------------**/
+  
+  /**---------------- Start for Contact Page Style ------------------**/
+  
+  #body #content .content div p{
+    margin: 10px 0 0 30px;
+	padding:0 15px 0 0;
+	font-family: "Myriad Pro";
+	font-size:14px;
+	line-height:25px;
+	color:#7F7154;
+  }
+  
+   #body #content .content div p a{
+      color:#FF9E01;
+   }
+   #body #content .content div p a:hover{
+      color:#7F7154;
+   }
+   
+  #body #content .content ul.connect{
+    font-family: "Myriad Pro";
+    margin: 50px 0 0 30px;
+  }
+  
+  #body #content .content ul.connect li{
+    width:640px;
+	width:400px;
+	margin-top:20px;
+  }
+  
+  #body #content .content ul.connect li h2{
+     
+	 border-style:solid;
+	 border-color:#ccc;
+	 border-width:1px;
+	 border-top:none;
+	 border-right:none;
+	 border-left:none;
+  }
+  #body #content .content ul.connect li span{
+    display:block;
+  }
+  
+  #body #content .content ul.connect li span a{
+    color:#FF9E01;
+  }
+  #body #content .content ul.connect li span a:hover{
+    color:#7F7154;
+  }
+  /**---------------- End for Contact Page Style ------------------**/
+  
+  /**---------------- Start for Pet guide Page Style ------------------**/
+  
+  #body #content .content ul.section{
+     margin:80px 0 0 30px;
+	 list-style-type:none;
+	 width:580px;
+	 overflow:hidden;
+	 height:auto;
+	 
+	 
+  }
+  
+  #body #content .content ul.section li{
+     width:240px;
+	 margin:0 50px 10px 0;
+	 padding:0;
+	 float:left;
+	 height:250px;
+  }
+  
+   #body #content .content ul.section li h2{
+     background-color:#ff9d13;
+	 height:30px;
+	 line-height:30px;
+	 text-align:center;
+	 font-family:"Myriad Pro";
+	 color:#ffffff;
+	 font-weight:normal;
+   }
+   
+   #body #content .content .paging{
+     margin:0 0 20px 40px;
+	 background:url("../images/border-dotted.gif");
+	 background-position:top;
+	 background-repeat:repeat-x;
+	 width:480px;
+	 height:80px;
+	 
+   }
+   
+   #body #content .content .paging a{
+     text-decoration:none; 
+	 font-size:24px;
+	 font-family:"Myriad Pro";
+	 color:#ffffff;
+	 text-align:center;
+	 background:url("../images/buttons.gif");
+	 background-position: 0 -90px;
+	 background-repeat:repeat-x;
+	 height:40px;
+	 width:40px;
+	 float:left;
+	 margin:20px 5px 20px 5px;
+	 line-height:40px;
+   }
+   
+   #body #content .content .paging a:hover{
+     color:#000000;
+   }
+  
+   #body #content .content .paging a.active{
+	 background:url("../images/buttons.gif");
+	 background-position: 0 0; 
+	 background-repeat:repeat-x;
+   }
+   
+   #body #content .content .paging a.next{
+	 background:url("../images/buttons.gif");
+	 background-position: 0 -180px;
+	 background-repeat:repeat-x;
+	 height:40px;
+	 width:100px;
+   }
+  /**---------------- End for Pet guide Page Style ------------------**/
+  
+  
+  
+  
+ /** Start Sidebar style **/ 
+  #body #content #sidebar{
+    float:left; 
+	width:300px;
+	background-image:none;
+  }
+  
+  
+  #body #content #sidebar div#section{
+     background:url("../images/bg-sidebar-heading.gif");
+	 background-position:top center;
+	 background-repeat:no-repeat;
+	 height:auto;
+	 overflow:hidden;
+	 margin-top:80px; 
+  }
+  
+  #body #content #sidebar div#section div{
+    background:url("../images/bg-sidebar-bottom-curve.gif");
+	background-position:bottom center;
+	background-repeat:no-repeat;
+	height:auto;
+	padding: 12px 4px 12px 4px;
+	
+  }
+  
+  #body #content #sidebar div#section div div{
+    background:url("../images/bg-sidebar.gif");
+	background-position:center;
+	height:auto; 
+	overflow:hidden;
+
+  }
+  
+   #body #content #sidebar div#section div div h2 {
+     margin-left:25px;
+	 font-weight:normal;
+	 font-family:"Myriad Pro";
+	 font-size:24px;
+   }
+   
+   #body #content #sidebar div#section div div ul{
+     list-style-type:none;
+	  margin-left:20px;
+	  /*
+	  *margin-left:50px;
+	  */
+   }
+   
+   #body #content #sidebar div#section div div ul li{
+     margin-bottom:5px;
+	 
+   }
+   
+   #body #content #sidebar div#section div div ul li a{
+     text-decoration:none;
+	 color:#7F7154;
+	 font-size:14px;
+	 font-family:"Myriad Pro";
+   }
+   
+   
+   #body #content #sidebar div#section div div ul.archive{
+     width:210px;
+	 margin:0;
+	 padding:0 0 0 30px;
+   }
+   #body #content #sidebar div#section div div ul.archive li{
+      background:url("../images/top-border-long.gif");
+	  background-position:top center;
+	  background-repeat:no-repeat;
+   }
+   
+    #body #content #sidebar div#section div div ul.archive li a{
+	 line-height:50px;
+	  color:#7F7154;
+	 font-size:18px;
+	 font-family:"Myriad Pro";	
+	 
+	   background:url("../images/icons.gif");
+	  
+	   background-position: 190px 20px;
+	  background-repeat:no-repeat;
+	  width:210px;
+	  display:inline-block;
+	  color:#FF9D13;
+	  
+	}
+    
+	 #body #content #sidebar div#section div div ul.archive li a.active{
+	 
+	  background:url("../images/icons.gif");
+	  
+	  background-position: 190px -42px;
+	  background-repeat:no-repeat;
+	  color:#FF9D13;
+	 
+	}
+	
+     #body #content #sidebar div#section div div ul.archive li ul li{
+	   background-image:none;
+	   height:20px;
+	   /*
+	   *height:0px;
+	   */
+	   padding:0;
+	   
+	 }
+      
+	  #body #content #sidebar div#section div div ul.archive li ul{
+	    margin:0 0 30px -20px;
+		/*
+		* margin:0 0 50px -20px;
+		*padding-left:40px;
+		*/
+         background:url("../images/top-border-long.gif");
+		  background-position:top center;
+		  background-repeat:no-repeat;
+		}
+	  
+      #body #content #sidebar div#section div div ul.archive li ul li a{
+	   background-image:none;
+	   display:inline-block;
+	   /*
+	   *line-height:30px;
+	   */
+	   color:#7F7154;
+	  }
+	  #body #content #sidebar div#section div div ul.archive li ul li a:hover{
+	    color:#FF9D13;
+	  }
+   
+   
+   
+   #body #content #sidebar div#section div div ul li a:hover{
+     color:#ff9d13;
+   }
+    #body #content #sidebar div#section div div ul li a span{
+	 color:#ff9d13;
+   }
+  
+  
+  #body #content #sidebar  a img{
+    border:0;
+  }
+  
+  
+  #body #content #sidebar .search{
+     background:url("../images/bg-search-form.gif");
+	 background-position:center;
+	 background-repeat:no-repeat;
+	 width:300px;
+	 height:70px;
+	 margin:0;
+  }
+  
+  #body #content #sidebar .search input{
+	 background-position:center;
+	 background-repeat:no-repeat;
+	 width:160px; 
+	 padding: 8px 5px;
+	 border:0;
+	 margin:5px 3px 5px 10px;
+	 font-size:14px;
+	 font-family:"Myriad Pro";
+	 color:#7f7154;
+	 
+  }
+  
+  #body #content #sidebar .search button{
+	 background-position: 0 -270px;
+	 width:77px; 
+	 height:30px;
+	 border:0;
+	 margin:5px 5px 5px 0;
+	 cursor:pointer;
+  }
+  
+  #body #content #sidebar .search label{
+	 font-size:14px;
+	 font-family:"Myriad Pro";
+	 color:#ffffff;
+	} 
+   #body #content #sidebar .search label input{
+     margin: 0 10px 0 10px;
+	 width:10px;
+	 background:transparent;
+   }
+   
+   
+   
+   #body #content #sidebar .section{
+      width:300px;
+	  margin-top:30px;
+   }
+   
+   #body #content #sidebar .section .aside{
+     background:url("../images/bg-sidebar-top.gif");
+	 background-position:center top;
+	 background-repeat:no-repeat;
+	 width:300px;
+	 padding-top:4px;
+	 margin:0 0 20px 0;
+	 height:auto;
+   }
+   
+   #body #content #sidebar .section .aside div{
+     width:300px;
+	 background:url("../images/bg-sidebar-bottom.gif");
+	 background-position:center bottom;
+	 background-repeat:no-repeat;
+	 padding-bottom:4px;
+	 height:auto;
+   }
+   
+   #body #content #sidebar .section .aside div div{
+     width:282px;
+	 padding: 0 9px 0 9px;
+	 background:url("../images/bg-sidebar-mid.gif");
+	 background-position:center;
+	 height:auto;
+   }
+   
+    #body #content #sidebar .section .aside div div ul{
+	 list-style-type:none;
+	 margin:0;
+	 padding:0;
+	}
+	
+	
+	
+	#body #content #sidebar .section .aside div div ul li{
+	 background:url("../images/bg-list-item.gif");
+	 background-position:center bottom;
+	 background-repeat:no-repeat; 
+	 clear:both;
+	 height:32px;
+	 line-height:32px;
+	 width:282px;
+	 
+	}
+	
+	#body #content #sidebar .section .aside div div ul li a{
+	  text-decoration:none;
+	  display:inline-block;
+	  color:#7f7154;
+	  font-size:14px;
+	  margin:0 0 0 10px;
+	  font-family:"Myriad Pro";
+	  width:210px;
+	  /*
+	  _width:200px;
+	  */
+	  float:left;
+	}
+	
+	#body #content #sidebar .section .aside div div ul li a:hover{
+	  color:#e4a217;
+	  
+	}
+	
+	#body #content #sidebar .section .aside div div ul li a.more{
+	  width:42px;
+	  color:#e4a217;
+	  float:left;
+	  text-align:right;
+	}
+	
+	#body #content #sidebar .section .aside div div ul li a:hover.more{
+	  width:42px;
+	  color:#7f7154;
+	  text-align:right;
+	}
+	
+	
+	
+	
+	#body #content #sidebar .section ul.navigation{
+	  list-style-type:none;
+	  margin:0;
+	  padding:0;
+	  overflow:hidden;
+	}
+   
+    #body #content #sidebar .section ul.navigation li.active{
+	  float:left;
+	  width:140px;
+	  height:30px;
+	  background:url("../images/menu.gif");
+	  background-position: 0 0;
+	  background-repeat:no-repeat; 
+    } 
+	
+	
+    #body #content #sidebar .section ul.navigation li{
+	  float:left;
+	  width:140px;
+	  height:30px;
+	  background:url("../images/menu.gif");
+	  background-position: 0 -80px; 
+	  background-repeat:no-repeat; 
+	  text-align:center;
+    } 
+	
+	#body #content #sidebar .section ul.navigation li a{
+	  text-decoration:none;
+	  text-align:center;
+	  line-height:30px;
+	  display:inline-block;
+	  font-family:"Myriad Pro";
+	  font-size:14px;
+	  color:#000000;
+	  font-weight:bold;
+	}
+	
+	#body #content #sidebar .section ul.navigation li a:hover{
+	  color:#7F7154;
+	}
+   
+   
+   /**---- Start of sidebar featured style----**/
+    #body #content #sidebar .featured{
+	  width:300px;
+	  height:auto;
+	  overflow:hidden;
+	  background-color:#ffffff;
+	}
+	
+	#body #content #sidebar .featured ul{
+	  margin:0;
+	  padding:0;
+	  list-style-type:none;
+	}
+	
+	#body #content #sidebar .featured  h2{
+	   font-family:"Myriad Pro";
+	  font-size:28px;
+	  color:#000000; 
+	  font-weight:normal;
+	  margin:60px 0 0 0;
+	}
+	
+	#body #content #sidebar .featured ul li{
+	  clear:both;
+	  width:300px;
+	  height:170px;
+	  margin: 10px 0;
+	  background: url("../images/shadow.gif");
+	  background-repeat:no-repeat;
+	  background-position:bottom center;
+	  overflow:visible;
+	  
+	}
+	
+	#body #content #sidebar .featured ul li h2{
+	   margin:0 0 -10px 0;
+	   padding:0;
+	}
+	
+	#body #content #sidebar .featured ul li h2 a{
+	 font-family:"Myriad Pro";
+	  font-size:20px;
+	  color:#000000;
+	  font-weight:bold;
+	}
+	
+	#body #content #sidebar .featured ul li h2 a:hover{
+	  color:#7F7154;
+	}
+	
+	#body #content #sidebar .featured ul li  img{
+	  border:0;
+	  float:left;
+	}
+	#body #content #sidebar .featured ul li a{
+	   text-decoration:none;
+	}
+	
+	#body #content #sidebar .featured ul li  p{
+	  color:#7F7154;
+	   font-family:"Myriad Pro";
+	  font-size:14px;
+	  line-height:25px;
+	  
+	}
+	
+	#body #content #sidebar .featured ul li  p a{
+	  color:#000000;
+	}
+	
+	#body #content #sidebar .featured ul li  p a:hover{
+	   color:#7F7154;
+	}
+	
+	#body #content #sidebar .featured ul li.last{
+	  background-image:none;
+	}
+	
+	#body #content #sidebar .featured ul li  p a.more{
+	   color:#FF9506;
+	}
+	#body #content #sidebar .featured ul li  p a.more:hover{
+	   color:#7F7154;
+	}
+   
+   
+   
+   /**---------------- Start of sidebar connect style ------------------**/
+   
+    #body #content #sidebar .connect{
+	  width:300px;
+	}
+	
+	#body #content #sidebar .connect h2{
+	  color:#ff9e01;
+	  font-family:"Myriad Pro";
+	  font-size:28px;
+	  font-style:Italic;
+	  margin:80px 0 0 0;
+	  padding:0;
+	  font-weight:normal;
+	}
+	
+	#body #content #sidebar .connect ul{
+	  margin:0;
+	  list-style-type:none;
+	}
+	
+	#body #content #sidebar .connect ul li{
+	  clear:both;
+	  height:70px;
+	  
+	  
+	  background: url("../images/top-border-short.gif");
+	  background-repeat:no-repeat;
+	  background-position: 10px bottom;
+	}
+	
+	#body #content #sidebar .connect ul li a{
+	  text-decoration:none;
+	  display:block;
+	  line-height:70px;
+	  padding-left:70px;
+	  color:#93898a;
+	}
+	
+	#body #content #sidebar .connect ul li a.facebook{
+	  background: url("../images/icons.gif");
+	  background-position: 0 -174px;
+	  background-repeat:no-repeat;
+	  
+	}
+	
+	#body #content #sidebar .connect ul li a.facebook:hover{
+	  opacity:0.8;
+      filter:alpha(opacity=80); 
+	}
+	
+	#body #content #sidebar .connect ul li a.subscribe{
+	  background: url("../images/icons.gif");
+	  background-position: 0 -428px; 
+	  background-repeat:no-repeat;
+	}
+	#body #content #sidebar .connect ul li a.subscribe:hover{
+	  opacity:0.8;
+      filter:alpha(opacity=80); 
+	}
+	
+	#body #content #sidebar .connect ul li a.twitter{
+	  background: url("../images/icons.gif");
+	  background-repeat:no-repeat; 
+	  background-position: 0 -588px;
+	}
+	
+	#body #content #sidebar .connect ul li a.twitter:hover{
+	  opacity:0.8;
+      filter:alpha(opacity=80); 
+	}
+	
+	#body #content #sidebar .connect ul li a.flicker{
+	  background: url("../images/icons.gif");
+	  background-repeat:no-repeat;
+	  background-position: 0 -268px; 
+	}
+	
+	#body #content #sidebar .connect ul li a.flicker:hover{
+	  opacity:0.8;
+      filter:alpha(opacity=80); 
+	}
+	
+	
+   
+   /**------------------------ End of sidebar style  ----------------------**/
+   
+  /**----------- Start of featured Style -------------**/ 
+   #body .featured{
+	 background-color:#f8f3e9;
+	 height:90px;
+	 padding: 20px 0;
+	 background-image:none;
+	 overflow:hidden;
+   }
+   
+   #body .featured ul{
+     margin:0 auto;
+	 padding:0;
+	 width:960px;
+	 
+	 list-style-type:none;
+   }
+   
+   #body .featured ul li{
+     float:left;
+	 margin-right:30px;
+	 height:90px;
+   }
+   
+   #body .featured ul li.last{
+       margin-right:0;
+   }
+   
+   #body .featured ul li a{
+      text-decoration:none;
+   }
+   
+   #body .featured ul li a{
+      text-decoration:none;
+   }
+   
+   
+   
+   #body .featured ul li a img{
+      border:0;
+   }
+   
+   
+   
+   /**--------------- Start of footer style ------------------**/
+   #footer{
+     background-color:#310000;
+	 background-image:none;
+   }
+   
+   #footer .section{
+       width:960px;
+	   margin:0 auto;
+	   overflow:hidden;
+	   position:relative;
+   }
+   
+   #footer .section ul{
+      margin:0;
+	  padding:0;
+	  list-style-type:none;
+   }
+   #footer .section ul li{
+     float:left;
+	 width:240px;
+	 height:190px;
+	 
+   }
+   
+   #footer .section ul li img{
+      position:absolute;
+	  top:0;
+   }
+   
+   #footer .section ul li h2{
+      position:relative;
+	  top:60px;
+	  left:0;
+	  z-index:10;
+	  padding: 0 10px 0 15px; 
+	  margin:20px 0 -15px 0;
+	  /*
+	  *margin:30px 0 -20px 0;
+	  */
+	 
+   }
+   
+   #footer .section ul li h2 a{
+       font-family:"Myriad Pro", Arial;
+	   font-size:16px;
+	   color:#bffb05;
+	   text-decoration:none;
+	   font-weight:normal;
+   }
+   
+   #footer .section ul li p{
+      position:relative;
+	  top:60px;
+	  padding: 0 10px 0 15px; 
+	  z-index:10;
+	  font-family:"Myriad Pro";
+	  font-size:14px;
+	  color:#ffffff;
+	  line-height:20px;
+   }
+   
+   #footer .section ul li p a{
+     color:#ffffff;
+   }
+   #footer .section ul li p a:hover{
+     color:#ff6700;
+   }
+   
+   #footer .section ul li p a.more{
+      color:#ff6700;
+   }
+   
+   #footer .section ul li p a.more:hover{
+      color:#ffffff;
+   }
+   
+   #footer #footnote{
+	  background-color:#ffad00;
+   }
+   
+   #footer #footnote .section{
+       width:960px;
+	   height:50px;
+	   text-align:center;
+	   line-height:50px;
+	   font-family:"Myriad Pro";
+	   font-size:13px;
+		
+   }
+   
+   #footer #footnote .section a{
+      text-decoration:none;
+	  color:#000000;
+   }
+   #footer #footnote .section a:hover{
+      color:#ffffff;
+   }
+   

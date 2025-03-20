@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lanysec.rbac.user.dao.web.BussinessDao">
+   <resultMap type="com.lanysec.rbac.user.model.web.Bussiness" id="BaseResultMap">
+        <id property="id" column="id" jdbcType="INTEGER"/>
+        <result property="bussinessId" column="sys_client_name" jdbcType="VARCHAR"/>
+        <result property="bussinessName" column="sys_client_sex" jdbcType="VARCHAR"/>
+        <result property="bussinessAddress" column="bussinessAddress" jdbcType="VARCHAR"/>
+        <result property="bussinessPhone" column="bussinessPhone" jdbcType="VARCHAR"/>
+    </resultMap>
+    <select id="getBussinessList" resultMap="BaseResultMap">
+        SELECT 
+            *
+        FROM 
+            sys_bussiness
+        LIMIT
+          #{startNum},#{page}
+    </select>
+    <select id="getSignalBussinessyIsbn" resultMap="BaseResultMap">
+     SELECT 
+            *
+        FROM 
+            sys_bussiness
+    WHERE
+    bussinessId=#{bussinessId}  
+    
+    </select>
+      <select id="getCount" resultType="INTEGER">
+        SELECT 
+              COUNT(*)
+        FROM
+             sys_bussiness
+      </select>
+     
+      <insert id="addBussiness">
+          INSERT INTO 
+              sys_bussiness  
+                (bussinessId,bussinessName,bussinessAddress,bussinessPhone)
+            VALUES
+                (#{bussiness.bussinessId},#{bussiness.bussinessName},#{bussiness.bussinessAddress},#{bussiness.bussinessPhone})
+        </insert>
+        <update id="updateBussiness">
+           UPDATE 
+                sys_bussiness  
+            SET
+               bussinessName=#{bussiness.bussinessName},
+               bussinessAddress=#{bussiness.bussinessAddress},
+               bussinessPhone=#{bussiness.bussinessPhone}
+           WHERE
+               bussinessId=#{bussiness.bussinessId}
+        </update>
+        <delete id="deleteBussinessByIsbn">
+            DELETE FROM
+                 sys_bussiness 
+              WHERE
+               bussinessId=#{bussinessId}    
+        </delete>
+</mapper>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lanysec.rbac.user.dao.web.ClientDao">
+   <resultMap type="com.lanysec.rbac.user.model.web.Client" id="BaseResultMap">
+        <id property="clientIsbn" column="sys_client_isbn" jdbcType="VARCHAR"/>
+        <result property="clientName" column="sys_client_name" jdbcType="VARCHAR"/>
+        <result property="clientSex" column="sys_client_sex" jdbcType="VARCHAR"/>
+         <result property="clientAge" column="sys_client_age" jdbcType="VARCHAR"/>
+    </resultMap>
+    <select id="getClientList" resultMap="BaseResultMap">
+        SELECT 
+            *
+        FROM 
+            sys_client
+        LIMIT
+          #{startNum},#{page}
+    </select>
+    <select id="getSignalClientByIsbn" resultMap="BaseResultMap">
+     SELECT 
+            *
+        FROM 
+            sys_client
+    WHERE
+    sys_client_isbn=#{clientIsbn}  
+    
+    </select>
+      <select id="getCount" resultType="INTEGER">
+        SELECT 
+              COUNT(*)
+        FROM
+             sys_client
+      </select>
+      <select id="getWelcomDog">
+      SELECT
+        *,
+        count(*) AS count
+    FROM
+        sys_dog
+    GROUP BY
+        sys_dog_type_isbn
+    ORDER BY
+        count DESC
+    LIMIT 3
+      </select>
+      <insert id="addClient">
+          INSERT INTO 
+              sys_client  
+                (sys_client_isbn,sys_client_name,sys_client_sex,sys_client_age)
+            VALUES
+                (#{client.clientIsbn},#{client.clientName},#{client.clientSex},#{client.clientAge})
+        </insert>
+        <update id="updateClient">
+           UPDATE 
+                sys_client  
+            SET
+               sys_client_name=#{client.clientName},
+               sys_client_sex=#{client.clientSex},
+               sys_client_age=#{client.clientAge}
+           WHERE
+               sys_client_isbn=#{client.clientIsbn}
+        </update>
+        <delete id="deleteClientByIsbn">
+            DELETE FROM
+                 sys_client 
+              WHERE
+                sys_client_isbn=#{clientIsbn}    
+        </delete>
+</mapper>

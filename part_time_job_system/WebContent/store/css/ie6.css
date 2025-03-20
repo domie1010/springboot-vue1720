@@ -1,0 +1,49 @@
+ /** Website template by freewebsitetemplates.com **/
+
+
+
+#body #content .content ul.articles li   a.heart{
+	 
+	  margin-top:0px;
+	  _background-position: 5px -354px;
+	}
+	
+	
+#body #content .content ul.articles li  a.facebook{
+	   
+	   margin-top:0px;
+	   _background-position: 0 -104px;
+	}	
+	
+#body #content .content ul.articles li  a.twitter{
+	  background-position: 0 -514px;
+	   margin-top:0px;
+	}	
+	
+
+	
+#body #content .content ul.articles li  a.twitter{
+	  
+	   height:20px;
+	}
+   
+ 
+	 
+	 #body #content #sidebar div#section div div ul.archive li ul{
+	    
+		margin:0 0 50px -20px;
+		padding-left:40px;
+         
+		} 
+		
+	 #body #content #sidebar div#section div div ul.archive li ul li a{
+	   
+	   line-height:30px;
+	   
+	  }
+
+      #footer .section ul li h2{
+    
+     	margin:30px 0 -20px 0;
+		
+   }	  
